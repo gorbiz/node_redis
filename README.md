@@ -779,7 +779,7 @@ clients.watcher.watch('foo',function(err) {
       .multi()
       .set('foo','abc')
       .set('bar','1234')
-      .exec((err,results) => {
+      .exec((err, results) => {
         if (err) { throw err; } 
         if (results === null) {
           console.log('transaction aborted because results were null');
